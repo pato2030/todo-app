@@ -1,15 +1,19 @@
-const inputbox = document .getElementById ("inputbox");
-const listcontainer = document .getElementById ("list-container");
+alert("javascript have been link successfully")
+
+
+
+const inputbox = document.getElementById ("input-text");
+const listcontainer = document.getElementById ("list-container");
 
 function addTask(){
-    if(inputbox.value === ''){
+    if(inputbox.value.trim() === ''){
         alert("you must write something!");
     }
     else{
         let li = document.createElement("li");
         li.innerHTML = inputbox.value;
         listcontainer.appendChild(li);
-        let span =document .createElement ("span");
+        let span =document.createElement ("span");
         span.innerHTML="\u00d7";
         li.appendChild(span)
     }
